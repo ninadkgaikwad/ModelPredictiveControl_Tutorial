@@ -1,0 +1,113 @@
+\documentclass[11pt,usenames]{article}
+\usepackage{srcltx,pdfsync}
+%\usepackage[pdflatex=false,recompilepics]{gastex} 
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{color}
+\usepackage{hyperref, url}
+\usepackage{geometry}
+%\usepackage{mathtools}
+\usepackage{graphicx,subfigure,wrapfig}
+\geometry{verbose,a4paper,tmargin=30mm,bmargin=50 mm,lmargin=25mm,rmargin=16mm}
+\usepackage{ifthen}
+
+\usepackage{subfigure}
+
+\def\Lap{\ensuremath{\mathcal{L}}}
+\usepackage{fancyhdr}
+\pdfpagewidth 10in
+\pdfpageheight 11in
+
+\pagestyle{fancy}
+\headheight 35pt
+
+\usepackage{listings} % For inserting Code
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+
+\graphicspath{{./Images/}}
+
+%%%%%% New Commands %%%%%%%%
+\newcommand{\argmax}[1]{\underset{#1}{\operatorname{arg}\,\operatorname{max}}\;}
+
+%%%%%%%%%%%%%
+\usepackage[fancythm]{jphmacros2e}
+\renewcommand{\footrulewidth}{0.5 pt}
+
+\rhead{\small{Tutorial}}
+\chead{Model Predictive Control: Tutorial}
+\lhead{\small{}}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+\title{}
+
+\date{}
+
+
+\begin{document}
+	
+% Formatting for the required code	
+\lstset{language=Matlab,%
+	%basicstyle=\color{red},
+	breaklines=true,%
+	morekeywords={matlab2tikz},
+	keywordstyle=\color{blue},%
+	morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+	identifierstyle=\color{black},%
+	stringstyle=\color{mylilas},
+	commentstyle=\color{mygreen},%
+	showstringspaces=false,%without this there will be a symbol in the places where there is a space
+	numbers=left,%
+	numberstyle={\tiny \color{black}},% size of the numbers
+	numbersep=9pt, % this defines how far the numbers are from the text
+	emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+	%emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+% Formatting for the required code
+
+\begin{center}
+	{\sc Distributed Control of Energy Systems Laboratory}\\
+	Mechanical and Aerospace Engineering Department \\
+	University of Florida \\
+	\vspace{0.5 cm}
+\end{center}
+
+{\large \begin{center}
+		\textbf{Tutorial}\\
+		\textbf{Introduction to Model Predictive Control}\\
+		Ninad Gaikwad and Prabir Barooah  
+\end{center}}
+
+
+\newpage
+
+
+\tableofcontents
+
+
+\newpage
+
+
+\section{Introduction}\label{section:Introduction}
+
+
+	
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
